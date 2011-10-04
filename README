@@ -130,6 +130,16 @@ make install DESTDIR=/foo/bar
   file could result to unwanted behaviour.
 
 
+Building for QNX from Windows
+==================================
+Run cmd.exe and execute the following commands:
+> cd [bbndk]				where [bbndk] is where the QNX NDK was installed (i.e. C:\bbndk)
+> NativeSDK-env.bat
+> cd [alut]				    where [alut] is the directory where Lua was extracted to
+> make
+Following this, the relevant binaries should reside in the arm/ and x86/ subdirectory.
+
+
 Support
 =======
 
