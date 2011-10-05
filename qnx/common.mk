@@ -10,12 +10,12 @@ endef
 NAME=alut
 
 #===== EXTRA_INCVPATH - a space-separated list of directories to search for include files.
-PUBLIC_INCVPATH=$(PROJECT_ROOT)/include
-EXTRA_INCVPATH+=$(PROJECT_ROOT)/src/Include \
-	$(PROJECT_ROOT)/../openal/include
+PUBLIC_INCVPATH=$(PRODUCT_ROOT)/include
+EXTRA_INCVPATH+=$(PRODUCT_ROOT)/src/Include \
+	$(PRODUCT_ROOT)/../openal/include
 
 #===== EXTRA_SRCVPATH - a space-separated list of directories to search for source files.
-EXTRA_SRCVPATH+=$(PROJECT_ROOT)/src
+EXTRA_SRCVPATH+=$(PRODUCT_ROOT)/src
 
 INSTALLDIR=$(firstword $(INSTALLDIR_$(OS)) usr/lib)
 	

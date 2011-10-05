@@ -135,9 +135,14 @@ Building for QNX from Windows
 Run cmd.exe and execute the following commands:
 > cd [bbndk]				where [bbndk] is where the QNX NDK was installed (i.e. C:\bbndk)
 > NativeSDK-env.bat
-> cd [alut]				    where [alut] is the directory where Lua was extracted to
+> cd [alut]/qnx			    where [alut] is the directory where ALUT was extracted to
 > make
-Following this, the relevant binaries should reside in the arm/ and x86/ subdirectory.
+Following this, the relevant binaries should reside in the following subdirectories:
+    libalut: 
+        [alut]/qnx/arm/a.le.v7     (ARM release)
+        [alut]/qnx/arm/a.le.v7.g   (ARM debug)
+        [alut]/qnx/x86/a           (x86 simulator release)
+        [alut]/qnx/x86/a.g         (x86 simulator debug)
 
 
 Support
