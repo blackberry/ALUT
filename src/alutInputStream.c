@@ -46,7 +46,7 @@ _alutInputStreamConstructFromFile (const char *fileName)
       return NULL;
     }
 
-  if (stat (fileName, &statBuf))
+  if (!fileName || stat (fileName, &statBuf))
     {
       _alutSetError (ALUT_ERROR_IO_ERROR);
       free (stream);
